@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.filter-sort {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+    font-size: 2rem;
+    font-family: 'Economica', sans-serif;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    max-height: 480px;
+    margin-bottom: 10px;
+}
+
+.product-card {
+    background-image: url('/images/Backdrop-rotate.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+    color: white; /* Adjust text color for contrast */
+    border: 1px solid rgb(0, 0, 0); /* Add a solid black border */
+    height: 600px; /* Set a fixed height for uniformity */
+}
+
+.product-card h3 {
+    font-size: 1.2rem;
+    margin: 3px 0 3px 0; /* Better spacing between brand and model */
+    font-family: 'Economica', sans-serif;
+}
+
+.product-card p {
+    margin: 3px 0; /* Minimal spacing between lines */
+    font-size: 1rem; /* Consistent font size */
+    font-family: 'Economica', sans-serif;
+}
+
+.product-card .price {
+    margin-top: 3px; /* Space between model and price */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold color for price */
+    font-family: 'Economica', sans-serif;
+}
+
+.product-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Keep the color as per the product card */
+    display: block; /* Make the entire card clickable */
+}
+
+.product-link:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+    color: inherit; /* Maintain the same color */
+}
