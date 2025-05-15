@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Page</title>
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="css/Guitar-Page.css">
+</head>
+<body>
+
+<!-- Include Navbar -->
+<div id="navbar-container"></div>
+<script>
+    window.onload = function() {
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    };
+</script>
+
+  <!-- Filter and Sort Options -->
+  <div class="filter-sort">
+    <span class="filter">filter by ›</span>
+    <span class="sort">sort by ›</span>
+</div>
+
+<!-- Product Grid -->
+<div class="product-grid">
+    <div class="product-card">
+        <img src="images/Fender Guitar.png" alt="Fender Guitar">
+        <h3>Fender</h3>
+        <p>Hybrid 50s Telecaster</p>
+        <p class="price">$1,450.00</p>
+    </div>
+    <div class="product-card">
+        <img src="images/Gibson Guitar.png" alt="Gibson Guitar">
+        <h3>Gibson</h3>
+        <p>Les Paul Studio</p>
+        <p class="price">$2,500.00</p>
+    </div>
+    <div class="product-card">
+        <img src="images/Ibanez Guitar.png" alt="Ibanez Guitar">
+        <h3>Ibanez</h3>
+        <p>RG7321</p>
+        <p class="price">$699.00</p>
+    </div>
+    <div class="product-card">
+        <img src="images/guitar4.png" alt="Fender Strat">
+        <h3>Fender</h3>
+        <p>1957 Relic Stratocaster</p>
+        <p class="price">$4,599.00</p>
+    </div>
+</div>
+
+</body>
+</html>

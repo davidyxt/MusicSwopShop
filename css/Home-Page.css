@@ -31,12 +31,13 @@ body {
     height: 100%;
 }
 
-.logo-img {
+.logo img {
 
-    max-width: 100px;
-    height: auto; 
+    max-width: 100px; 
+    height: auto;
 
 }
+
 
 /* Navigation Links */
 .nav-links {
@@ -193,7 +194,7 @@ body {
 .instrument-text {
     position: absolute;
     top: 50%; /* Vertically center */
-    right: 160px; /* Distance from right edge */
+    right: 150px; /* Distance from right edge */
     transform: translateY(-50%); /* Perfect vertical centering */
     text-align: left; /* Align text to the left */
     z-index: 15;
