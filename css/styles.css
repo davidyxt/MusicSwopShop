@@ -18,6 +18,7 @@ body {
     align-items: center;
     justify-content: space-between;
     height: 90px;
+    font-family: 'Fira Code', monospace;
     border-bottom: 1px solid #333;
 }
 
@@ -55,6 +56,12 @@ body {
     width: 120px; 
     height: 100%; 
     border-left: 1px solid #333; 
+    font-family: 'Fira Code', monospace;
+}
+
+.nav-links a:hover {
+    color: #000000;
+    text-decoration: underline;
 }
 
 /* Header Section */
@@ -70,22 +77,25 @@ body {
     display: flex;
     align-items: flex-end;
     gap: 10px; 
+    margin-left: 45px;
+    justify-content: space-between;
 }
 
 .title {
-    font-family: 'Arial Black', sans-serif;
+    font-family: 'Karantina', cursive;
     font-size: 4rem;
     font-weight: 900;
     margin: 0;
     line-height: 1;
     white-space: nowrap; 
+    transform: scale(1.25, 1.5); 
 }
 
 .subtitle {
-    font-family: 'Arial', sans-serif;
-    font-size: 0.98rem;
+    font-family: 'Economica', sans-serif;
+    font-size: 2.4rem;
     font-weight: 300;
-    margin: 0;
+    margin-left: 40px;
     margin-top: 20px; 
     line-height: 1.2;
 }
@@ -99,10 +109,26 @@ body {
     position: relative; 
 }
 
+/* NEW IN Text Styling */
+.new-in {
+    position: absolute;
+    top: 10px;
+    left: 35px;
+    color: #FFFFFF;
+    font-size: 40px;
+    font-family: 'Economica', sans-serif;
+    background-color: transparent;
+    z-index: 20;
+    opacity: 0.9; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
 /* Backdrop Image */
 .backdrop {
-    width: 1128px; 
+    width: 1322px; 
     max-width: 100%;
+    min-height: 530px;
     height: auto;
     display: block;
     border: 1px solid #000000;
@@ -128,7 +154,7 @@ body {
     left: 35%;
     transform: translate(-50%, -50%) rotate(90deg);
     max-width: 60%;
-    max-height: 700px;
+    max-height: 850px;
     height: auto;
     opacity: 0;
     transition: opacity 0.5s ease;
@@ -163,3 +189,81 @@ body {
     background-color: #000000; 
 }
 
+/* Instrument Text Styling */
+.instrument-text {
+    position: absolute;
+    top: 50%; /* Vertically center */
+    right: 160px; /* Distance from right edge */
+    transform: translateY(-50%); /* Perfect vertical centering */
+    text-align: left; /* Align text to the left */
+    z-index: 15;
+    font-family: 'Karatina', sans-serif;
+    opacity: 0; /* Hidden initially */
+    visibility: hidden; /* Prevent interaction */
+    transition: opacity 0s ease, transform 0s ease; /* Smooth transition */
+}
+
+.instrument-text.active {
+    opacity: 1; /* Fully visible when active */
+    visibility: visible; /* Allow interaction */
+    transform: translateY(-50%); /* Maintain position */
+}
+
+.instrument-text a {
+    display: block;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.instrument-text .brand {
+    font-size: 4.5em; /* Adjusted size for prominence */
+    font-family: 'Karantina', cursive;
+}
+
+.instrument-text .model {
+    font-size: 3em; /* Slightly smaller for the model */
+    margin-top: 3px;
+    font-family: 'Economica', sans-serif;
+}
+
+.instrument-text .price a {
+    font-size: 4.8em; /* Emphasize the price */
+    color: #FFD700; /* Gold color */
+    margin: 8px 0;
+    font-family: 'Economica', sans-serif;
+}
+
+.instrument-text .price a:link, 
+.instrument-text .price a:visited {
+    color: #FFD700;
+}
+
+/* Explore More Styling */
+.explore-more {
+    position: absolute;
+    bottom: 10px; /* Distance from bottom */
+    right: 40px; /* Distance from right */
+    text-align: right;
+    font-family: 'Economica', sans-serif;
+    z-index: 16;
+}
+
+.explore-more a {
+    color: #ffffff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.explore-more a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* General link styling for instrument text */
+.instrument-text a:link, 
+.instrument-text a:visited, 
+.instrument-text a:active {
+    color: #FFFFFF;
+    text-decoration: none;
+}

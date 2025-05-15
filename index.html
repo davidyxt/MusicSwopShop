@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MusicSwopShop</title>
     <link rel="stylesheet" href="css/styles.css">
@@ -36,19 +39,54 @@
     <!-- Header Section -->
     <div class="header">
         <div class="title-container"></div>
-            <h1 class="title">Music Swop Shop</h1>
+            <h1 class="title">music swop shop</h1>
             <p class="subtitle">Melbourne's go-to spot for quality pre-loved gear and rare musical finds.</p>
         </div>
     </div>
 
-    <!-- Image Carousel -->
+    <!-- Image Container -->
     <div class="image-container">
+        <div class="new-in">NEW IN</div>
+        <div class="explore-more">
+            <a href="#">EXPLORE MORE ›</a>
+        </div>
         <img src="images/Backdrop.png" alt="Backdrop" class="backdrop">
+        
+         <!-- Images -->
         <div class="carousel-images">
             <img src="images/Fender Bass.webp" alt="Fender Bass" class="fender-bass carousel-item active">
             <img src="images/Gibson Guitar.png" alt="Gibson Guitar" class="gibson-guitar carousel-item">
             <img src="images/Fender Guitar.png" alt="Fender Guitar" class="fender-guitar carousel-item">
             <img src="images/Ibanez Guitar.png" alt="Ibanez Guitar" class="ibanez-guitar carousel-item">
+        </div>
+
+         <!-- Instrument Text -->
+         <div class="instrument-texts">
+
+            <div class="instrument-text active" id="text-0">
+                <div class="brand"><a href="#">Fender</a></div>
+                <div class="model"><a href="#">JB-62 Active<br>Jazz Bass</a></div>
+                <div class="price"><a href="#">$1499.00</a></div>
+            </div>
+
+            <div class="instrument-text" id="text-1">
+                <div class="brand"><a href="#">Gibson</a></div>
+                <div class="model"><a href="#">Les Paul<br>Studio</a></div>
+                <div class="price"><a href="#">$2500.00</a></div>
+            </div>
+    
+            <div class="instrument-text" id="text-2">
+                <div class="brand"><a href="#">Fender</a></div>
+                <div class="model"><a href="#">Telecaster</a></div>
+                <div class="price"><a href="#">$1800.00</a></div>
+            </div>
+    
+            <div class="instrument-text" id="text-3">
+                <div class="brand"><a href="#">Ibanez</a></div>
+                <div class="model"><a href="#">RG Series</a></div>
+                <div class="price"><a href="#">$1200.00</a></div>
+            </div>
+            
         </div>
     </div>
     

@@ -1,3 +1,5 @@
+/* Home Page Image Carousel */
+
 // Ensure the DOM is fully loaded before attaching event listeners
 document.addEventListener("DOMContentLoaded", function () {
     let currentIndex = 0;
@@ -6,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function showSlide(index) {
         const items = document.querySelectorAll('.carousel-item');
         const dots = document.querySelectorAll('.dot');
+        const texts = document.querySelectorAll('.instrument-text');
 
         // Loop through all items to hide them and remove active class from dots
         items.forEach((item, idx) => {
@@ -14,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
             if (idx === index) {
                 item.classList.add('active');
                 dots[idx].classList.add('active');
+            }
+        });
+
+        // Update instrument text
+        texts.forEach((text, idx) => {
+            text.classList.remove('active');
+            if (idx === index) {
+                text.classList.add('active');
             }
         });
 
