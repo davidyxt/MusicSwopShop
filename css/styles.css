@@ -17,7 +17,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 90px;
     border-bottom: 1px solid #333;
 }
 
@@ -94,16 +94,72 @@ body {
 .image-container {
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 20px auto 12px auto;
     padding: 0;
+    position: relative; 
 }
 
+/* Backdrop Image */
 .backdrop {
     width: 1128px; 
     max-width: 100%;
     height: auto;
-    display: block; 
-    border: 1px solid #000000; 
+    display: block;
+    border: 1px solid #000000;
     margin: 0 auto;
+}
+
+/* Carousel Images */
+.carousel-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Individual Guitar Images */
+.carousel-item {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    max-width: 60%;
+    max-height: 700px;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 2;
+}
+
+.carousel-item.active {
+    opacity: 1; 
+}
+
+/* Dots Styling */
+.dots {
+
+    text-align: center;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    background-color: #888888;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10; 
+    position: relative; 
+
+}
+
+/* Active Dot Styling */
+.dot.active {
+    background-color: #000000; 
 }
 

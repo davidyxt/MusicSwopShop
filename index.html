@@ -20,12 +20,10 @@
 
     <header>
         <div class="navbar">
-
             <!-- Logo Section -->
             <div class="logo">
                 <img src="images/Logo.png" alt="Music Swop Shop Logo"> 
             </div>
-
             <!-- Navigation Links -->
             <nav class="nav-links">
                 <a href="#">Cart</a>
@@ -43,12 +41,27 @@
         </div>
     </div>
 
-    <!-- Instrument Section -->
+    <!-- Image Carousel -->
     <div class="image-container">
         <img src="images/Backdrop.png" alt="Backdrop" class="backdrop">
+        <div class="carousel-images">
+            <img src="images/Fender Bass.webp" alt="Fender Bass" class="fender-bass carousel-item active">
+            <img src="images/Gibson Guitar.png" alt="Gibson Guitar" class="gibson-guitar carousel-item">
+            <img src="images/Fender Guitar.png" alt="Fender Guitar" class="fender-guitar carousel-item">
+            <img src="images/Ibanez Guitar.png" alt="Ibanez Guitar" class="ibanez-guitar carousel-item">
+        </div>
     </div>
     
-    <script src="js/script.js"></script>
+    <div class="carousel-bar">
+        <div class="dots">
+            <span class="dot active" onclick="showSlide(0)"></span>
+            <span class="dot" onclick="showSlide(1)"></span>
+            <span class="dot" onclick="showSlide(2)"></span>
+            <span class="dot" onclick="showSlide(3)"></span>
+        </div>
+    </div>
 
+    <script src="js/script.js"></script>
+    
 </body>
 </html>
