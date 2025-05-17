@@ -1,0 +1,111 @@
+#navbar-container {
+    margin-bottom: 55px; /* Adjust the value as needed */
+}
+
+/* Product Display */
+.product-display {
+    display: flex;
+    justify-content: center; /* Ensures centering */
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Main Image Container */
+.main-image-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    max-width: 400px;        
+    height: auto;
+    margin: auto;            
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.main-image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Thumbnail Images */
+.thumbnail-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+/* Add to Cart Below Thumbnails */
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Price and Add to Cart */
+.price-add-to-cart {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.price {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.add-to-cart {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.add-to-cart:hover {
+    background-color: #333;
+}
+
+/* --- The rest of your CSS --- */
+/* Base Styling */
+body {
+    font-family: 'Economica', sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Product Container */
+.product-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 10px;
+}
+
+.product-info {
+    max-width: 300px;
+}
+
+.product-info h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.product-info p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    text-align: left;
+}

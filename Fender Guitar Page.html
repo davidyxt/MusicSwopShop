@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fender Telecaster</title>
+    <!-- Link to your stylesheet -->
+    <link rel="stylesheet" href="css/Fender Guitar Page.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+<script>
+    // Load the navbar from the external file
+    window.onload = function() {
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    };
+</script>
+
+<!-- Product Details -->
+<div class="product-container">
+    <div class="product-info">
+        <h1>Fender Hybrid 50's Telecaster</h1>
+        <p>Made in America, <strong>1951 - 1953</strong>. Accurate take on the famous solid body axe. Ash body with a butterscotch blonde finish.</p>
+    </div>
+
+    <!-- Product Images -->
+    <div class="product-display">
+        <div class="main-image-container">
+            <img src="images/Fender Thumbnail 1.png" alt="Fender Bass Main Image">
+        </div>
+        <div class="thumbnail-container">
+            <div class="thumbnail-images">
+                <img src="images/Fender Thumbnail 2.png" alt="Thumbnail 1">
+                <img src="images/Fender Thumbnail 3.png" alt="Thumbnail 2">
+                <img src="images/Fender Thumbnail 4.png" alt="Thumbnail 3">
+                <img src="images/Fender Thumbnail 5.png" alt="Thumbnail 4">
+            </div>
+            <div class="price-add-to-cart">
+                <p class="price">$1450.00</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
