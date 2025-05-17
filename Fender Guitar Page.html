@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fender Telecaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap">
     <!-- Link to your stylesheet -->
     <link rel="stylesheet" href="css/Fender Guitar Page.css">
 </head>
@@ -24,31 +26,44 @@
 
 <!-- Product Details -->
 <div class="product-container">
-    <div class="product-info">
-        <h1>Fender Hybrid 50's Telecaster</h1>
-        <p>Made in America, <strong>1951 - 1953</strong>. Accurate take on the famous solid body axe. Ash body with a butterscotch blonde finish.</p>
-    </div>
 
     <!-- Product Images -->
-    <div class="product-display">
-        <div class="main-image-container">
-            <img src="images/Fender Thumbnail 1.png" alt="Fender Bass Main Image">
-        </div>
-        <div class="thumbnail-container">
-            <div class="thumbnail-images">
-                <img src="images/Fender Thumbnail 2.png" alt="Thumbnail 1">
-                <img src="images/Fender Thumbnail 3.png" alt="Thumbnail 2">
-                <img src="images/Fender Thumbnail 4.png" alt="Thumbnail 3">
-                <img src="images/Fender Thumbnail 5.png" alt="Thumbnail 4">
+    <div class="product-page-container"> <!-- Overall page wrapper if needed -->
+        <div class="product-container-3col"> <!-- This will be our 3-column flex parent -->
+    
+            <div class="column product-info-column">
+                <!-- All your product text (h1, p) goes here -->
+                <h1>FENDER HYBRID 50's TELECASTER</h1>
+                <p>Made in America, <strong>1951 - 1953</strong>. Accurate take on the famous solid body axe. Ash body with a butterscotch blonde finish.</p>
             </div>
-            <div class="price-add-to-cart">
-                <p class="price">$1450.00</p>
-                <button class="add-to-cart">Add to Cart</button>
+    
+            <div class="column main-image-column">
+                <!-- Just the main image container -->
+                <div class="main-image-container">
+                    <img src="images/Fender Thumbnail 1.png" alt="Main product image" id="mainProductImage">
+                </div>
             </div>
+    
+            <div class="column thumbnails-cart-column">
+                <!-- Thumbnails -->
+                <div class="thumbnail-images">
+                    <img src="images/Fender Thumbnail 1.png" alt="Thumbnail 1" class="product-thumbnail">
+                    <img src="images/Fender Thumbnail 3.png" alt="Thumbnail 2" class="product-thumbnail">
+                    <img src="images/Fender Thumbnail 4.png" alt="Thumbnail 3" class="product-thumbnail">
+                    <img src="images/Fender Thumbnail 5.png" alt="Thumbnail 4" class="product-thumbnail">
+                </div>
+                <!-- Price and Add to Cart -->
+                <div class="price-add-to-cart">
+                    <p class="price">$1450.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+    
         </div>
     </div>
-
 </div>
+
+<script src="js/Fender Guitar Page.js"></script>
 
 </body>
 </html>

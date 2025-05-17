@@ -1,23 +1,51 @@
 #navbar-container {
-    margin-bottom: 55px; /* Adjust the value as needed */
+    margin-bottom: 80px; 
 }
 
-/* Product Display */
-.product-display {
+.product-container-3col {
     display: flex;
-    justify-content: center; /* Ensures centering */
-    align-items: flex-start;
-    gap: 20px;
+    justify-content: space-between; 
+    align-items: flex-start;      
+    padding: 2px;                
+    gap: 1px;   
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;                
 }
 
-/* Main Image Container */
-.main-image-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    max-width: 400px;        
-    height: auto;
-    margin: auto;            
+/* Column 1: Product Info */
+.product-info-column {
+    flex-basis: 30%; 
+    margin-right: 30px; 
+}
+
+.product-info-column h1 {
+    font-size: 6rem; 
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 15px;
+    font-family: 'Karantina';
+}
+
+.product-info-column p {
+    font-size: 2rem; 
+    line-height: 1.5;
+    text-align: right;
+}
+
+/* Column 2: Main Image */
+.main-image-column {
+    flex-basis: 40%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px; 
+
+}
+
+.main-image-container { 
+    max-width: 400px;
+    width: 100%; 
     border: 1px solid black;
     overflow: hidden;
 }
@@ -28,84 +56,67 @@
     display: block;
 }
 
-/* Thumbnail Images */
-.thumbnail-images {
+/* Column 3: Thumbnails and Cart */
+.thumbnails-cart-column {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    gap: 15px;             
+}
+
+.thumbnail-images { 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+    width: 100%; 
+    max-width: 320px; 
 }
 
-/* Add to Cart Below Thumbnails */
-.thumbnail-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.thumbnail-images img {
-    width: 150px;
+.thumbnail-images img { 
+    width: 100%; 
     height: auto;
     border: 1px solid black;
     cursor: pointer;
 }
 
-/* Price and Add to Cart */
 .price-add-to-cart {
-    margin-top: 10px;
-    text-align: center;
+    display: flex;         
+    align-items: center;    
+    justify-content: center;
+    gap: 15px;              
+    width: 100%;           
+    max-width: 320px;   
 }
 
-.price {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+.price { 
+    font-size: 3rem;
+    margin-bottom: 2.5px;
     font-weight: bold;
+    line-height: 1;
 }
 
-.add-to-cart {
+.add-to-cart { 
     background-color: black;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 24px;
+    font-size: 2rem;
     border: none;
     cursor: pointer;
-    display: inline-block;
+    font-family: 'Economica', sans-serif;
+    display: inline-flex;   
+    align-items: center;   
+    justify-content: center;
+
 }
 
 .add-to-cart:hover {
     background-color: #333;
 }
 
-/* --- The rest of your CSS --- */
-/* Base Styling */
 body {
     font-family: 'Economica', sans-serif;
-    background-color: #f4f4f4; 
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-/* Product Container */
-.product-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 10px;
-}
-
-.product-info {
-    max-width: 300px;
-}
-
-.product-info h1 {
-    font-size: 4.5rem;
-    font-weight: bold;
-    text-align: left;
-}
-
-.product-info p {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    line-height: 1.5;
-    text-align: left;
 }
