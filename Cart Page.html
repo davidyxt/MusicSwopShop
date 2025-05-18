@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fender Telecaster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/Cart Page.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+<script>
+    // Load the navbar from the external file
+    window.onload = function() {
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    };
+</script>
+
+<div class="content-wrapper"> 
+    <!-- Main Cart Section -->
+    <main class="cart-section">
+        <div class="cart-info">
+            <h1>shopping cart (0)</h1>
+            <p>There's nothing in here...yet.</p>
+            <label for="order-note">Order Note:</label>
+            <textarea id="order-note" name="order-note" rows="8"></textarea>
+        </div>
+    </main>
+
+    <!-- Payment Information Section -->
+    <aside class="payment-info">
+        <h2>Payment Information</h2>
+        <div class="payment-categories">
+            <div class="cost-details">
+                <p><span>Subtotal:</span><span>$0.00</span></p>
+                <p><span>Taxes:</span><span>$0.00</span></p>
+                <p><span>Delivery:</span><span>$0.00</span></p>
+            </div>
+            <div class="total-details">
+                <p><span>Total To Pay: </span><span>$0.00</span></p>
+                <p><span>Expected Shipping: </span><span>0 Days</span></p>
+            </div>
+        </div>
+        <div class="payment-actions">
+            <button class="checkout">CHECKOUT</button>
+            <button class="waitlist">WAITLIST</button>
+        </div>
+    </aside>
+</div> 
+
+</body>
+</html>

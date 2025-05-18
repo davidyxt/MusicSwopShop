@@ -41,38 +41,38 @@ body {
     background-position: center;
     padding: 20px;
     text-align: center;
-    color: white; /* Adjust text color for contrast */
-    border: 1px solid rgb(0, 0, 0); /* Add a solid black border */
-    height: 600px; /* Set a fixed height for uniformity */
+    color: white; 
+    border: 1px solid rgb(0, 0, 0); 
+    height: 600px; 
 }
 
 .product-card h3 {
     font-size: 1.2rem;
-    margin: 3px 0 3px 0; /* Better spacing between brand and model */
+    margin: 3px 0 3px 0; 
     font-family: 'Economica', sans-serif;
 }
 
 .product-card p {
-    margin: 3px 0; /* Minimal spacing between lines */
-    font-size: 1rem; /* Consistent font size */
+    margin: 3px 0; 
+    font-size: 1rem; 
     font-family: 'Economica', sans-serif;
 }
 
 .product-card .price {
-    margin-top: 3px; /* Space between model and price */
+    margin-top: 3px;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #FFD700; /* Gold color for price */
+    color: #FFD700; 
     font-family: 'Economica', sans-serif;
 }
 
 .product-link {
-    text-decoration: none; /* Remove underline */
-    color: inherit; /* Keep the color as per the product card */
-    display: block; /* Make the entire card clickable */
+    text-decoration: none; 
+    color: inherit; 
+    display: block;
 }
 
 .product-link:hover {
-    text-decoration: none; /* Ensure no underline on hover */
-    color: inherit; /* Maintain the same color */
+    text-decoration: none; 
+    color: inherit; 
 }
