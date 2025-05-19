@@ -17,18 +17,20 @@
 </head>
 <body>
 
-<!-- Navbar -->
-<div id="navbar-container"></div>
-<script>
-    // Load the navbar from the external file
-    window.onload = function() {
-        fetch('nav-bar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            });
-    };
-</script>
+    <header>
+        <div class="navbar">
+            <!-- Logo Section -->
+            <div class="logo">
+                <img src="images/Logo.png" alt="Music Swop Shop Logo"> 
+            </div>
+            <!-- Navigation Links -->
+            <nav class="nav-links">
+                <a href="#">Cart</a>
+                <a href="#">Search</a>
+                <a href="#">Menu</a>
+            </nav>
+        </div>
+    </header>
 
     <!-- Header Section -->
     <div class="header">
@@ -58,9 +60,9 @@
          <div class="instrument-texts">
 
             <div class="instrument-text active" id="text-0">
-                <div class="brand"><a href="#">Fender</a></div>
-                <div class="model"><a href="#">JB-62 Active<br>Jazz Bass</a></div>
-                <div class="price"><a href="#">$1499.00</a></div>
+                <div class="brand"><a href="Fender Bass Page.html">Fender</a></div>
+                <div class="model"><a href="Fender Bass Page.html">JB-62 Active<br>Jazz Bass</a></div>
+                <div class="price"><a href="Fender Bass Page.html">$1499.00</a></div>
             </div>
 
             <div class="instrument-text" id="text-1">
@@ -70,9 +72,9 @@
             </div>
     
             <div class="instrument-text" id="text-2">
-                <div class="brand"><a href="#">Fender</a></div>
-                <div class="model"><a href="#">Telecaster</a></div>
-                <div class="price"><a href="#">$1800.00</a></div>
+                <div class="brand"><a href="Fender Guitar Page.html">Fender</a></div>
+                <div class="model"><a href="Fender Guitar Page.html">Telecaster</a></div>
+                <div class="price"><a href="Fender Guitar Page.html">$1800.00</a></div>
             </div>
     
             <div class="instrument-text" id="text-3">
