@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page Bass</title>
+    <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap">
+    <link rel="stylesheet" href="css/Cart Page Updated.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+<script>
+    // Load the navbar from the external file
+    window.onload = function() {
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    };
+</script>
+
+<div class="content-wrapper"> 
+    <main class="cart-section">
+        <div class="cart-info">
+            <h1>shopping cart (1)</h1>
+            
+            <div class="cart-item-box">
+                <a href="Cart Page.html" class="close-button">&times;</a>
+                <div class="cart-item-image">
+                  <img src="images/Fender Bass.webp" alt="Fender Bass">
+                </div>
+                <div class="cart-item-details">
+                  <h3>Fender</h3>
+                  <p>JB-62 Active Jazz Bass</p>
+                  <p class="price">$1499.00</p>
+                </div>
+            </div>
+    
+            <label for="order-note">Order Note:</label>
+            <textarea id="order-note" name="order-note" rows="8"></textarea>
+        </div>
+    </main>
+
+    <!-- Payment Information Section -->
+    <aside class="payment-info">
+        <h2>Payment Information</h2>
+        <div class="payment-categories">
+            <div class="cost-details">
+                <p><span>Subtotal:</span><span>$1499.00</span></p>
+                <p><span>Taxes:</span><span>$0.00</span></p>
+                <p><span>Delivery:</span><span>$0.00</span></p>
+            </div>
+            <div class="total-details">
+                <p><span>Total To Pay: </span><span>$1499.00</span></p>
+                <p><span>Expected Shipping: </span><span>3 Days</span></p>
+            </div>
+        </div>
+        <div class="payment-actions">
+            <a href="Checkout Page Bass.html">
+                <button class="checkout">CHECKOUT</button>
+              </a> 
+            <a href="Checkout Page Bass.html">
+                <button class="waitlist">WAITLIST</button>
+            </a>
+        </div>
+    </aside>
+</div>
+
+</body>
+</html>

@@ -22,7 +22,7 @@ body {
 }
 
 .product-card {
-    background-color: #e0e0e0;
+    background-color: hsl(129, 72%, 29%);
     padding: 20px;
     text-align: center;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 .product-card {
-    background-image: url('/images/Backdrop-rotate.png');
+    background-image: url('../images/Backdrop-rotate.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

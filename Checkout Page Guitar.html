@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page Bass</title>
+  <link href="https://fonts.googleapis.com/css2?family=Economica:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karantina:wght@400;700&display=swap">
+  <link rel="stylesheet" href="css/Checkout Page.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div id="navbar-container"></div>
+<script>
+    // Load the navbar from the external file
+    window.onload = function() {
+        fetch('nav-bar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+    };
+</script>
+
+<!-- Waitlist Message -->
+<main class="waitlist-section">
+    <h1>item has been purchased !</h1>
+    <p>Thank you for shopping with us! Let us know if you have any further questions or enquiries.</p>
+
+    <!-- Item Display Box -->
+    <div class="cart-item-box">
+      <div class="cart-item-image">
+        <img src="images/Fender Guitar.png" alt="Fender Guitar">
+      </div>
+      <div class="cart-item-details">
+        <h3>Fender</h3>
+        <p>Hybrid 50's<br>Telecaster</p>
+        <p class="price">$1800.00</p>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
