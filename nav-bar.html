@@ -12,16 +12,46 @@
     <div class="navbar">
         <!-- Logo Section -->
         <div class="logo">
-            <a href="Home Page.html"><img src="images/Logo.png" alt="Music Swop Shop Logo"></a>
+            <a href="Home Page.html"><img src="images/Logo.png" alt="Music Swop Shop Logo" style="margin-top: 4px;"></a>
         </div>
         <!-- Navigation Links -->
         <nav class="nav-links">
             <a href="Cart Page.html">Cart</a>
             <a href="search.html">Search</a>
-            <a href="menu.html">Menu</a>
+            <a href="javascript:void(0);" onclick="toggleSidebar()">Menu</a>
         </nav>
     </div>
 </header>
+
+    <!-- Sidebar Menu -->
+    <div id="sidebar" class="sidebar">
+        <button class="close-btn" onclick="toggleSidebar()">X</button>
+        <ul>
+        <li>Guitar <span>›</span></li>
+        <li>Bass <span>›</span></li>
+        <li>Amplifiers <span>›</span></li>
+        <li>Effects Pedals <span>›</span></li>
+        <li>Keyboards <span>›</span></li>
+        <li>Live Sound and PA <span>›</span></li>
+        <li>Drums <span>›</span></li>
+        <li>Accessories <span>›</span></li>
+        <li>Brands <span>›</span></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleSidebar() {
+          const sidebar = document.getElementById("sidebar");
+          const currentRight = getComputedStyle(sidebar).right;
+      
+          if (currentRight === "0px") {
+            sidebar.style.right = "-260px";
+          } else {
+            sidebar.style.right = "0px";
+          }
+        }
+    </script>
+
 
 </body>
 </html>

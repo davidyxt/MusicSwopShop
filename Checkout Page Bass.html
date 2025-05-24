@@ -13,15 +13,27 @@
 <!-- Navbar -->
 <div id="navbar-container"></div>
 <script>
-    // Load the navbar from the external file
-    window.onload = function() {
-        fetch('nav-bar.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            });
+    window.onload = function () {
+      fetch('nav-bar.html')
+        .then(response => response.text())
+        .then(data => {
+          const container = document.getElementById('navbar-container');
+          container.innerHTML = data;
+  
+          // Extract and execute any script tags from the loaded HTML
+          const scripts = container.querySelectorAll('script');
+          scripts.forEach(script => {
+            const newScript = document.createElement('script');
+            if (script.src) {
+              newScript.src = script.src;
+            } else {
+              newScript.textContent = script.textContent;
+            }
+            document.body.appendChild(newScript);
+          });
+        });
     };
-</script>
+  </script>
 
 <!-- Waitlist Message -->
 <main class="waitlist-section">
