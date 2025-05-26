@@ -57,6 +57,7 @@ textarea {
     font-weight: bold;
     margin-bottom: 15px;
     font-family: 'Economica', sans-serif;
+    margin-bottom: 20px;
 }
 
 .payment-categories {
@@ -74,6 +75,10 @@ textarea {
     gap: 5px;
     margin-bottom: 10px;
 }
+
+.total-details p:last-child {
+    margin-bottom: 0px; 
+  }
 
 .cost-details p, .total-details p {
     display: flex;
@@ -195,3 +200,184 @@ button:hover {
     z-index: 9999;       
     font-family: Arial, sans-serif;
   }
+
+  @media screen and (max-width: 400px) {
+
+    .payment-info {
+        display: none;
+    }
+
+    #navbar-container {
+        margin-bottom: 1px;
+    }
+    
+    /* Global Layout */
+    .content-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack vertically for mobile or centered look */
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        align-items: center;
+    }
+    
+    /* Cart Section (Full width look) */
+    .cart-section {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    
+    .cart-section h1 {
+        font-size: 3.5rem;
+        font-weight: bold;
+        font-family: 'Karantina', cursive;
+        margin-bottom: 20px;
+    }
+    
+    .cart-section p {
+        font-size: 3.5rem;
+        margin: 80px 0 30px 0;
+        color: #000000;
+        font-family: 'Economica', sans-serif;
+    }
+    
+    /* Label */
+    label {
+        display: block;
+        font-family: 'Economica', sans-serif;
+        font-size: 1.4rem;
+        margin-bottom: 5px;
+        text-align: left;
+        margin-top: 50px; 
+    }
+    
+    /* Text Area */
+    textarea {
+        width: 100%;
+        height: 150px;
+        padding: 10px;
+        font-family: 'Economica', sans-serif;
+        font-size: 1rem;
+        border: 1px solid black;
+        resize: vertical;
+        margin-bottom: 2px;
+    }
+    
+    /* Payment Summary */
+    .payment-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 10px;
+        font-family: 'Economica', sans-serif;
+        margin-top: 2px;  
+    }
+    
+    .payment-info h2 {
+        font-family: 'Karantina', cursive;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+    
+    .payment-info .total-amount {
+        font-size: 2rem;
+        font-weight: 400px;
+    }
+    
+    /* Buttons Section */
+    .payment-actions {
+        display: flex;
+        gap: 10px;
+        margin-top: 30px;
+        width: 20px;
+        justify-content: space-between;
+        margin-right: 310px;
+    }
+    
+    button {
+        flex: 1;
+        max-width: 160px; 
+        padding: 15px 30px; 
+        font-size: 1.85rem;  
+        font-weight: bold;
+        font-family: 'Economica', sans-serif;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .checkout {
+        background-color: black;
+        color: white;
+    }
+    
+    .waitlist {
+        background-color: #708268;
+        color: white;
+    }
+    
+    button:hover {
+        opacity: 0.9;
+    }
+
+    .cart-item-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        border: 1px solid #000;
+        padding: 0 20px;
+        margin: 5px 0;
+        max-width: 900px;
+        min-height: 320px;
+        margin-bottom: -35px; 
+    }
+    
+    .cart-item-image {
+        width: 95px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .cart-item-image img {
+        width: auto;
+        height: 100%;
+        transform: rotate(0deg);
+        transform-origin: center;
+        display: block;
+        object-fit: contain;
+    }
+
+    .cart-item-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Economica', sans-serif;
+        flex: 1;
+    }
+    
+    .cart-item-details h3 {
+        font-size: 3.3rem;  
+        margin-bottom: 10px;
+        font-family: 'Karantina';
+    }
+    
+    .cart-item-details p {
+        font-size: 2rem;  
+        margin: 6px 0;
+        font-family: 'Economica', sans-serif;
+    }
+    
+    .cart-item-details .price {
+        font-weight: bold;
+        font-size: 3rem; 
+        margin-top: 10px;
+    }
+    
+    
+}

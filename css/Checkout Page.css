@@ -43,7 +43,7 @@ main.waitlist-section p {
 .cart-item-image img {
     width: auto;
     height: 100%;
-    transform: rotate(90deg);
+    transform: rotate(0deg);
     transform-origin: center;
     display: block;
     object-fit: contain;
@@ -86,4 +86,18 @@ main.waitlist-section p {
     font-size: 2rem;
     font-weight: bold;
     margin-top: 10px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .cart-item-image {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
 }
