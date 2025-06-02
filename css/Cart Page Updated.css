@@ -1,5 +1,5 @@
 #navbar-container {
-    margin-bottom: 25px; 
+    margin-bottom: 65px; 
 }
 
 /* Global Layout */
@@ -41,6 +41,7 @@ textarea {
     margin-top: 10px;
     border: 1px solid #000;
     font-family: 'Economica', sans-serif;
+    height: 133px;
 }
 
 /* Payment Section (Right) */
