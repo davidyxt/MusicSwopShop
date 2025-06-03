@@ -215,14 +215,14 @@ button:hover {
     /* Global Layout */
     .content-wrapper {
         display: flex;
-        flex-direction: column; /* Stack vertically for mobile or centered look */
+        flex-direction: column; 
         max-width: 600px;
         margin: 0 auto;
         padding: 20px;
         align-items: center;
     }
     
-    /* Cart Section (Full width look) */
+  
     .cart-section {
         width: 100%;
         padding: 0;
